@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>按下面的按钮会有窗口弹出~</h1>
+	<input type="submit" value="click" id="btn" />
+	<div class="win-pop">
+		<div id="win-mask"></div>
+		<div id="win-content">
+			<div class="win-header">友情提示
+				<a href="javascript:closeDiv()">×</a>
+			</div>
+			<div class="win-body">恭喜！你成功的弹出了窗口</div>
+			<div class="win-footer" id="footer">
+				<input type="submit" value="确认" id="btn-yes" />
+				<input type="submit" value="取消" id="btn-no" />
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
